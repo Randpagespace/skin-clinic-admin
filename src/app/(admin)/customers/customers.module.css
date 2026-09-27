@@ -1,0 +1,50 @@
+.content { padding: 26px 32px; }
+.notice { margin: 0 0 18px; color: #72777f; font-size: 12px; line-height: 1.7; }
+.primary { border: 1px solid #0066ff !important; background: #0066ff !important; color: white !important; border-radius: 6px; padding: 10px 16px; font-size: 13px; font-weight: 600; }
+.primary:hover { background: #0055d5 !important; }
+.tablePanel { background: white; border: 1px solid #e7e9ed; border-radius: 10px; overflow: hidden; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px; }
+.toolbar h2 { margin: 0 0 8px; font-size: 17px; }
+.toolbar h2 span { margin-left: 7px; color: #0066ff; font-size: 14px; }
+.toolbar p { color: #8a8f96; font-size: 12px; margin: 0; }
+.search { display: flex; gap: 8px; }
+.search input { width: 290px; border: 1px solid #dfe3e8; border-radius: 6px; padding: 10px 12px; font-size: 13px; }
+.search button, .dialogActions button { background: white; border: 1px solid #dfe3e8; border-radius: 6px; padding: 9px 14px; color: #555; }
+.summary { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; border-top: 1px solid #f1f2f4; font-size: 12px; color: #737982; }
+.summary p { margin: 0; }
+.summary strong { color: #252a31; }
+.summary select { border: 1px solid #dfe3e8; padding: 6px 22px 6px 9px; border-radius: 5px; margin: 0 5px; background: white; }
+.tableScroll { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; white-space: nowrap; text-align: left; }
+.table th { background: #f8f9fb; padding: 13px 20px; font-size: 12px; font-weight: 500; color: #727983; border-block: 1px solid #edf0f3; }
+.table td { padding: 15px 20px; border-bottom: 1px solid #f0f2f5; color: #50565e; font-size: 13px; }
+.table tbody tr:hover { background: #fafcff; }
+.customerLink { display: flex; align-items: center; gap: 10px; color: #242a31; font-weight: 600; text-decoration: none; }
+.customerLink:hover { color: #0066ff; text-decoration: underline; }
+.avatar { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #eef1f5; color: #707984; font-size: 12px; }
+.consent, .noConsent { font-size: 11px; padding: 4px 9px; border-radius: 4px; }
+.consent { color: #087d61; background: #e7f7f0; }
+.noConsent { color: #7e838a; background: #f2f3f5; }
+.table .empty { padding: 90px 24px; text-align: center; color: #777; }
+.pagination { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; gap: 14px; font-size: 12px; color: #8a9099; }
+.pagination nav { display: flex; gap: 5px; }
+.pagination button { min-width: 32px; height: 32px; border: 1px solid #e6e9ed; background: white; border-radius: 5px; color: #626a75; }
+.pagination button[aria-current] { background: #0066ff; color: white; border-color: #0066ff; }
+.pagination button:disabled { opacity: .35; cursor: not-allowed; }
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.dialog { border: 0; border-radius: 12px; padding: 28px; width: min(560px, calc(100% - 32px)); max-height: 90svh; color: #262c34; box-shadow: 0 20px 80px #0002; }
+.dialog::backdrop { background: #14223666; }
+.dialogHeading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.dialogHeading h2 { font-size: 20px; margin: 0; }
+.dialogHeading button { border: 0; background: none; font-size: 26px; color: #747b86; }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.formGrid label, .memo { font-size: 12px; font-weight: 600; }
+.formGrid label span { color: #0066ff; }
+.formGrid input, .formGrid select, .memo textarea { display: block; width: 100%; padding: 10px; border: 1px solid #dfe3e8; border-radius: 6px; margin-top: 8px; font: inherit; background: white; color: #333; }
+.checkbox { display: flex; align-items: center; gap: 6px; margin: 20px 0; font-size: 12px; }
+.checkbox input { accent-color: #0066ff; }
+.memo textarea { resize: vertical; }
+.dialogActions { display: flex; justify-content: flex-end; gap: 8px; border-top: 1px solid #eee; margin-top: 24px; padding-top: 20px; }
+.error { color: #b42318; font-size: 12px; }
+@media(max-width: 1000px) { .toolbar { align-items: stretch; flex-direction: column; } .pagination { flex-wrap: wrap; } }
+@media(max-width: 580px) { .content { padding: 16px; } .formGrid { grid-template-columns: 1fr; } .search input { width: 100%; min-width: 0; } .toolbar { padding: 16px; } }
